@@ -2,3 +2,5 @@ SQLite database framework
 
 Name: Cars
 Fields – Name, Model, Reg, Mileage, Year, Price, Colour. 
+
+Create a CSV file called 'cars.csv' that I can use to populate the database.

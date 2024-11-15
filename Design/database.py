@@ -1,5 +1,5 @@
 import sqlite3
-
+import csv
 def create_table():
     connect = sqlite3.connect('inventory.db')
     cursor = connect.cursor()
@@ -56,28 +56,18 @@ def delete_car(make, model):
     connect.commit()
     connect.close()
 
+def read_csv_file(file_path):
+    with open(file_path, 'r') as file:
+        reader = csv.reader(file)
+        next(reader)  # Skip the header row
+        for row in reader:
+            make, model, reg, mileage, year, price, colour = row
+            add_car(make, model, reg, mileage, year, price, colour)
 
 create_table()
 
-add_car('Peugeot', '208', 'KW12 OYE', 101000, 2012, 2500, 'Blue')
-
-#delete_car('Peugeot', '208')
+read_csv_file('cars.csv')
 
 cars = get_all_cars()
 for car in cars:
     print(car)
-
-
-
-# Usage examples:
-""" create_table()
-
-add_car('Toyota', 'Camry', 'ABC123', 50000, 2018, 15000, 'Red')
-
-cars = get_all_cars()
-for car in cars:
-    print(car)
-
-update_car('Toyota', 'Camry', 18000)
-
-delete_car('Toyota', 'Camry') """
