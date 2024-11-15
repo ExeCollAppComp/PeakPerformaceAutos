@@ -1,0 +1,4 @@
+SQLite database framework
+
+Name: Cars
+Fields – Name, Model, Reg, Mileage, Year, Price, Colour. 
