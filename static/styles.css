@@ -15,18 +15,21 @@ body {
     padding: 20px;
 }
 
-/* Header */
-h1 {
-    font-size: 2rem;
-    color: #2c3e50;
-    margin-bottom: 1rem;
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-/* Paragraph */
-p {
-    font-size: 1.1rem;
+header h1 {
+    font-size: 2.5rem;
+    color: #FF0000;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
     color: #555;
-    margin-bottom: 1.5rem;
 }
 
 /* Navigation */
@@ -58,18 +61,40 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #fff;
+    padding: 3rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #FF0000;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
 /* Form styling */
 form {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 form input[type="text"] {
     padding: 0.5rem;
     font-size: 1rem;
-    width: 250px;
+    width: 300px;
     border: 2px solid #ccc;
     border-radius: 4px;
 }
@@ -85,7 +110,51 @@ form button {
 }
 
 form button:hover {
+    background-color: #cc0000;
+}
+
+/* Featured Section */
+.featured {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.featured h2 {
+    text-align: center;
+    color: #FF0000;
+    margin-bottom: 1.5rem;
+}
+
+.featured .card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.featured .card h3 {
+    color: #FF0000;
+    margin-bottom: 0.5rem;
+}
+
+.featured .card p {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
     background-color: #FF0000;
+    color: white;
+    border-radius: 5px;
 }
 
 .showcase-img {
