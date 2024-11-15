@@ -1,7 +1,6 @@
 import sqlite3
-import csv
-import os
-from flask import Flask, jsonify
+from flask import Flask, render_template, request, redirect, url_for
+
 app = Flask(__name__)
 
 def create_table():
@@ -9,6 +8,7 @@ def create_table():
     cursor = connect.cursor()
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS inventory (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
             MAKE TEXT,
             MODEL TEXT,
             REG BLOB,
@@ -39,44 +39,58 @@ def get_all_cars():
     connect.close()
     return cars
 
-def update_car(make, model, new_price):
+def get_car(car_id):
+    connect = sqlite3.connect('inventory.db')
+    cursor = connect.cursor()
+    cursor.execute('SELECT * FROM inventory WHERE id = ?', (car_id,))
+    car = cursor.fetchone()
+    connect.close()
+    return car
+
+def edit_car(car_id, make, model, reg, mileage, year, price, colour):
     connect = sqlite3.connect('inventory.db')
     cursor = connect.cursor()
     cursor.execute('''
         UPDATE inventory
-        SET PRICE = ?
-        WHERE MAKE = ? AND MODEL = ?
-    ''', (new_price, make, model))
+        SET MAKE = ?, MODEL = ?, REG = ?, MILEAGE = ?, YEAR = ?, PRICE = ?, COLOUR = ?
+        WHERE id = ?
+    ''', (make, model, reg, mileage, year, price, colour, car_id))
     connect.commit()
     connect.close()
 
-def delete_car(make, model):
+def remove_car(car_id):
     connect = sqlite3.connect('inventory.db')
     cursor = connect.cursor()
-    cursor.execute('''
-        DELETE FROM inventory
-        WHERE MAKE = ? AND MODEL = ?
-    ''', (make, model))
+    cursor.execute('DELETE FROM inventory WHERE id = ?', (car_id,))
     connect.commit()
     connect.close()
 
-def read_csv_file(file_path):
-    with open(file_path, 'r') as file:
-        reader = csv.reader(file)
-        next(reader) 
-        for row in reader:
-            make, model, reg, mileage, year, price, colour = row
-            add_car(make, model, reg, mileage, year, price, colour)
-
-if not os.path.exists('inventory.db'):
-    create_table()
-
-read_csv_file(r'C:\Users\WILLCROSS\Desktop\PeakPerformaceAutos\Design\cars.csv')
-
-@app.route('/cars', methods=['GET'])
-def get_cars():
+@app.route('/catalogue', methods=['GET'])
+def catalogue():
     cars = get_all_cars()
-    return jsonify(cars)
+    return render_template('catalogue.html', cars=cars)
+
+@app.route('/edit/<int:car_id>', methods=['GET', 'POST'])
+def edit(car_id):
+    if request.method == 'POST':
+        make = request.form['make']
+        model = request.form['model']
+        reg = request.form['reg']
+        mileage = request.form['mileage']
+        year = request.form['year']
+        price = request.form['price']
+        colour = request.form['colour']
+        edit_car(car_id, make, model, reg, mileage, year, price, colour)
+        return redirect(url_for('catalogue'))
+    
+    car = get_car(car_id)
+    return render_template('edit.html', car=car)
+
+@app.route('/remove/<int:car_id>', methods=['POST'])
+def remove(car_id):
+    remove_car(car_id)
+    return redirect(url_for('catalogue'))
 
 if __name__ == '__main__':
-    app.run()
+    create_table()  # Ensure the table exists
+    app.run(debug=True)
