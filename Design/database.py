@@ -1,5 +1,6 @@
 import sqlite3
 import csv
+
 def create_table():
     connect = sqlite3.connect('inventory.db')
     cursor = connect.cursor()
