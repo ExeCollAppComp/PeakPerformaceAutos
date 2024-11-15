@@ -1,0 +1,101 @@
+Make,Model,Reg,Mileage,Year,Price,Colour
+Ford,Mustang,BD63 KJU,93755.00,1968,"£48,890.43",Crimson
+Mazda,Mazda5,YG19 OPA,11536.00,2006,"£13,858.54",Green
+Honda,CR-Z,EN57 FGY,159298.00,2012,"£10,974.78",Green
+Hyundai,Sonata,KX21 LSO,141824.00,2001,"£35,238.07",Goldenrod
+Ford,Taurus,WM04 ETR,121146.00,2003,"£21,225.46",Yellow
+Kia,Forte,SD66 YHN,32347.00,2012,"£27,159.03",Crimson
+Ford,Tempo,FH11 JKU,41882.00,1986,"£70,387.21",Mauv
+Mazda,Miata MX-5,LP22 VXB,97729.00,2011,"£4,177.58",Yellow
+Dodge,Ram,GR55 WQE,70529.00,2011,"£53,836.49",Teal
+Volvo,C70,NX62 ZFR,167921.00,2003,"£43,282.50",Red
+Toyota,Sienna,YA17 BNM,8575.00,2012,"£57,282.89",Puce
+Audi,Allroad,TD08 KLP,139166.00,2004,"£67,204.10",Fuscia
+Eagle,Talon,EJ61 GHY,24919.00,1995,"£74,675.54",Indigo
+Porsche,928,OV20 UIO,51877.00,1991,"£50,327.26",Turquoise
+Mercedes-Benz,SLK-Class,KU54 TRE,58760.00,1998,"£19,078.14",Maroon
+Lexus,IS,BS16 WQA,171408.00,2001,"£17,228.67",Teal
+BMW,X5,RY03 ASD,14508.00,2010,"£56,934.75",Pink
+Mitsubishi,Cordia,HF67 ZXC,192370.00,1984,"£23,289.07",Teal
+Hyundai,Accent,UP21 VBN,134199.00,2000,"£63,173.07",Crimson
+Bentley,Continental,GQ53 POI,5132.00,2011,"£52,123.07",Red
+Ford,F150,AZ15 QWE,94184.00,1999,"£26,583.29",Red
+GMC,Yukon,DC02 RTY,135550.00,2002,"£57,337.65",Aquamarine
+Mitsubishi,3000GT,FM69 UIO,180121.00,1993,"£57,852.30",Goldenrod
+Cadillac,Seville,LK28 PAS,10153.00,1995,"£45,061.65",Fuscia
+Lincoln,Continental,IW51 DFG,171525.00,1984,"£57,883.52",Goldenrod
+BMW,5 Series,BV19 HJK,121989.00,2004,"£45,887.43",Blue
+Volkswagen,New Beetle,SN07 LZX,7472.00,2001,"£32,375.82",Violet
+Ford,Taurus,YC64 CVB,54488.00,1994,"£9,820.20",Indigo
+Chevrolet,Blazer,ER23 NMO,67396.00,1998,"£72,823.85",Purple
+Ferrari,F430,TQ52 QAZ,50462.00,2008,"£60,262.87",Goldenrod
+Audi,Allroad,GP18 WSX,147359.00,2003,"£10,420.07",Pink
+Bugatti,Veyron,KL01 EDC,89234.00,2009,"£15,284.05",Red
+Pontiac,LeMans,RU65 RFV,154192.00,1965,"£60,467.06",Crimson
+Hyundai,Equus,OA27 TGB,74718.00,2012,"£47,834.00",Turquoise
+Audi,A6,HY59 YHN,82398.00,2001,"£1,120.10",Turquoise
+Ford,Galaxie,JB14 UJM,34971.00,1964,"£70,107.84",Blue
+GMC,Yukon,XV06 IKO,74128.00,2010,"£49,377.84",Pink
+Chevrolet,Silverado 3500,WN68 PLO,43471.00,2010,"£47,424.19",Goldenrod
+Mazda,Protege,SE22 KYU,130970.00,1993,"£72,306.70",Turquoise
+Kia,Optima,QD57 LOP,65799.00,2004,"£25,271.53",Turquoise
+Dodge,Ram 1500 Club,FG13 MNB,72621.00,1998,"£12,655.04",Fuscia
+GMC,Sierra Denali,CZ09 VCX,132014.00,2006,"£69,169.64",Goldenrod
+Ford,F-250 Super Duty,RT62 ZSA,78017.00,2006,"£72,553.91",Purple
+Ford,Econoline E150,AI26 QWE,3303.00,1997,"£39,311.79",Blue
+Cadillac,SRX,PL58 ASD,678.00,2004,"£8,597.69",Crimson
+Scion,xD,OH17 ZXC,129624.00,2009,"£3,842.08",Green
+Chevrolet,Malibu,BM05 VBN,3294.00,2005,"£62,014.73",Red
+Infiniti,Q,NU69 QAZ,67437.00,1999,"£12,279.55",Yellow
+Kia,Sportage,LS24 WSX,42749.00,1999,"£53,661.74",Crimson
+Mercedes-Benz,GL-Class,KI51 EDC,129641.00,2008,"£57,092.21",Blue
+Pontiac,Torrent,VY12 RFV,135977.00,2006,"£67,512.77",Puce
+Kia,Sorento,GW08 TGB,55195.00,2006,"£47,392.83",Aquamarine
+Lotus,Esprit Turbo,EX63 YHN,100946.00,1984,"£50,557.98",Mauv
+Geo,Tracker,DJ27 UJM,31184.00,1996,"£73,367.32",Yellow
+GMC,Yukon,UO56 IKO,139729.00,1997,"£60,551.97",Crimson
+Ford,Escape,AN10 PLO,131503.00,2006,"£47,403.19",Maroon
+Oldsmobile,LSS,TS61 KYU,119550.00,1999,"£33,530.16",Maroon
+Toyota,RAV4,RF07 LOP,59923.00,2011,"£55,034.58",Indigo
+Ford,Ranger,IE66 MNB,127414.00,1997,"£32,437.77",Green
+GMC,Envoy,PC23 VCX,81868.00,2005,"£66,070.75",Turquoise
+Chevrolet,Corvette,QL59 ZSA,48237.00,1989,"£24,162.06",Blue
+Acura,SLX,BH25 QWE,24431.00,1999,"£9,517.39",Mauv
+Volkswagen,Golf,MZ58 ASD,126400.00,1997,"£18,374.38",Turquoise
+Lexus,SC,OY14 ZXC,194500.00,1996,"£8,401.94",Orange
+Volkswagen,Eos,NV01 VBN,191015.00,2011,"£59,756.47",Crimson
+Volkswagen,GTI,LU67 QAZ,48402.00,1998,"£39,942.65",Mauv
+Mercury,Cougar,KS20 WSX,195465.00,1993,"£59,715.48",Teal
+Ford,Explorer,JW54 EDC,187401.00,2013,"£45,780.05",Crimson
+Toyota,Avalon,EY18 RFV,163649.00,2010,"£32,186.40",Green
+Oldsmobile,Cutlass Supreme,GV03 TGB,53136.00,1993,"£40,029.35",Violet
+Acura,NSX,AX69 YHN,52889.00,1997,"£69,846.05",Goldenrod
+BMW,X3,DU24 UJM,176740.00,2006,"£55,923.90",Green
+Saab,45421,UT51 IKO,193092.00,2009,"£55,535.46",Violet
+BMW,Z4,AM15 PLO,30944.00,2004,"£51,277.77",Fuscia
+Nissan,300ZX,TQ60 KYU,22158.00,1993,"£45,745.40",Orange
+Nissan,NX,GR06 LOP,103029.00,1993,"£6,785.60",Aquamarine
+Tesla,Roadster,FE65 MNB,102453.00,2012,"£45,382.94",Yellow
+Mazda,MX-5,CP22 VCX,66439.00,2000,"£14,543.19",Indigo
+Bentley,Arnage,QB58 ZSA,39214.00,2006,"£24,879.98",Blue
+Land Rover,Sterling,MH21 QWE,188952.00,1991,"£65,023.21",Fuscia
+GMC,Jimmy,OZ55 ASD,2954.00,1994,"£51,112.62",Goldenrod
+Mitsubishi,Mirage,NY19 ZXC,112176.00,1997,"£5,013.24",Maroon
+Volkswagen,GTI,NW02 VBN,178976.00,1995,"£25,821.49",Violet
+Chevrolet,Corvette,LV68 QAZ,66137.00,1999,"£58,419.13",Aquamarine
+Toyota,Highlander,KT25 WSX,34418.00,2012,"£58,320.01",Turquoise
+Jaguar,XK Series,JY52 EDC,167632.00,2013,"£52,377.73",Violet
+Mercury,Sable,EU16 RFV,165292.00,1986,"£39,481.88",Turquoise
+Dodge,Ram Van 2500,GS09 TGB,63207.00,1995,"£54,835.92",Crimson
+Saturn,VUE,AW64 YHN,49763.00,2002,"£57,542.43",Red
+Chevrolet,Corvette,DT28 UJM,96775.00,2012,"£50,037.75",Aquamarine
+Volvo,S40,US57 IKO,140242.00,2000,"£41,697.02",Indigo
+Buick,Electra,AL13 PLO,68992.00,1985,"£47,509.97",Mauv
+Hyundai,Sonata,TP62 KYU,198108.00,2008,"£23,640.19",Blue
+Pontiac,Firebird,GS08 LOP,181678.00,1985,"£10,897.45",Teal
+Toyota,Tacoma,FD61 MNB,30716.00,2004,"£66,257.85",Aquamarine
+Chevrolet,Silverado 1500,CO27 VCX,129387.00,2011,"£47,741.37",Blue
+Nissan,Versa,QA54 ZSA,24846.00,2012,"£21,095.11",Mauv
+Ford,F350,MM20 QWE,6901.00,2002,"£11,674.18",Blue
+Ford,Crown Victoria,OX53 ASD,179242.00,2010,"£60,005.13",Orange
+Nissan,370Z,NA17 ZXC,131.00,2012,"£39,306.69",Mauv
