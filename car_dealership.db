@@ -1,0 +1,13 @@
+-- Create the database (this is done in the SQLite shell, not explicitly in SQL)
+-- .open car_dealership.db
+
+CREATE TABLE cars (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    model TEXT NOT NULL,
+    reg TEXT NOT NULL,
+    mileage INTEGER NOT NULL,
+    year INTEGER NOT NULL,
+    price REAL NOT NULL,
+    colour TEXT NOT NULL
+);
