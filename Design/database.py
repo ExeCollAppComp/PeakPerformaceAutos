@@ -1,5 +1,8 @@
 import sqlite3
 import csv
+import os
+from flask import Flask, jsonify
+app = Flask(__name__)
 
 def create_table():
     connect = sqlite3.connect('inventory.db')
@@ -60,15 +63,20 @@ def delete_car(make, model):
 def read_csv_file(file_path):
     with open(file_path, 'r') as file:
         reader = csv.reader(file)
-        next(reader)  # Skip the header row
+        next(reader) 
         for row in reader:
             make, model, reg, mileage, year, price, colour = row
             add_car(make, model, reg, mileage, year, price, colour)
 
-create_table()
+if not os.path.exists('inventory.db'):
+    create_table()
 
-read_csv_file('cars.csv')
+read_csv_file(r'C:\Users\WILLCROSS\Desktop\PeakPerformaceAutos\Design\cars.csv')
 
-cars = get_all_cars()
-for car in cars:
-    print(car)
+@app.route('/cars', methods=['GET'])
+def get_cars():
+    cars = get_all_cars()
+    return jsonify(cars)
+
+if __name__ == '__main__':
+    app.run()
